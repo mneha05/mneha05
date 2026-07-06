@@ -137,11 +137,11 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 
 <br/>
 
-<div align="center">
+```
+──────────────────────────────  A R S E N A L  ──────────────────────────────
+```
 
-```
-────────────────────────────  A R S E N A L  ────────────────────────────
-```
+<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript)
@@ -162,25 +162,32 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 
 **Deep in:** agentic architectures (ReAct, orchestrator-workers, plan-and-execute) · LLM tool-use & function calling · RAG systems · GPU programming · embedded ML
 
-<br/>
-
-Deep in: agentic architectures (ReAct, orchestrator-workers, plan-and-execute) · LLM tool-use & function calling · RAG systems · GPU programming · embedded ML
+</div>
 
 <br/>
+
+```
 ────────────────────  C O M M I T   H I S T O R Y  ────────────────────
+```
 
-<img src="https://ghchart.rshah.org/8B5CF6/mneha05" alt="contribution graph" width="90%"/>
+<div align="center">
+
+<img src="https://ghchart.rshah.org/8B5CF6/mneha05" alt="contribution graph" width="92%"/>
+
 <br/><br/>
 
-+------------------------------------------------------------------+
-|                                                                  |
-|  if (you.building includes "agents" || "ML infra" || "GPUs") {   |
-|      -> let's talk.                                              |
-|  }                                                               |
-|                                                                  |
-|  mahesh54@purdue.edu                                             |
-|                                                                  |
-+------------------------------------------------------------------+
+<img src="https://raw.githubusercontent.com/mneha05/mneha05/output/github-contribution-grid-snake-dark.svg" alt="snake eating my contributions" width="92%"/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4" width="100%"/>
+<br/><br/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=700&lines=building+agents+%3E+building+demos;shipping+%3E+talking;if+you're+building+AI+that+acts+%E2%80%94+let's+talk;mahesh54%40purdue.edu" alt="outro" />
+
+<br/>
+
+[![Say hi](https://img.shields.io/badge/SAY_HI-mahesh54@purdue.edu-8B5CF6?style=for-the-badge)](mailto:mahesh54@purdue.edu)
+[![Connect](https://img.shields.io/badge/CONNECT-LinkedIn-0A66C2?style=for-the-badge)](https://linkedin.com/in/neha-mahesh)
+[![Explore](https://img.shields.io/badge/EXPLORE-Portfolio-1a1a2e?style=for-the-badge)](https://mneha05.github.io)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=footer&text=see%20you%20in%20the%20commits&fontSize=28&fontColor=fff&animation=twinkling&fontAlignY=72" width="100%"/>
+
 </div>
