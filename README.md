@@ -21,29 +21,21 @@
 
 <br/>
 
-```console
-neha@purdue:~$ whoami
+## About
 
-CS junior @ Purdue University — Machine Intelligence track, Mathematics minor.
-Currently: SWE Intern @ Qualcomm, where I architect an autonomous, agentic
-crash-triage pipeline — an LLM-driven tool-use loop that ingests raw modem
-crash reports, autonomously resolves build artifacts, retrieves source context,
-and localizes root cause before a human engineer ever opens the log.
+**CS junior @ Purdue University** — Machine Intelligence track, Mathematics minor. Currently **SWE Intern @ Qualcomm**, where I architect an autonomous, agentic crash-triage pipeline: an LLM-driven tool-use loop that ingests raw modem crash reports, autonomously resolves build artifacts, retrieves source context, and localizes root cause before a human engineer ever opens the log.
 
-The thesis behind everything I build: LLMs stop being toys and start being
-infrastructure the moment you give them tools, guardrails, and a reason
-to act. I design that layer.
+> **The thesis behind everything I build:** LLMs stop being toys and start being infrastructure the moment you give them tools, guardrails, and a reason to act. *I design that layer.*
 
-Also: Project Team Lead @ ML@Purdue // Marketing Lead @ Girls Who Code Purdue
-```
+Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls Who Code Purdue**
 
 <br/>
 
 <div align="center">
 
-```
-─────────────────────────  S E L E C T E D   W O R K  ─────────────────────────
-```
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" width="100%"/>
+
+<h2>SELECTED WORK</h2>
 
 </div>
 
@@ -163,6 +155,8 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 **Deep in:** agentic architectures (ReAct, orchestrator-workers, plan-and-execute) · LLM tool-use & function calling · RAG systems · GPU programming · embedded ML
 
 </div>
+
+<br/>
 
 <br/>
 
