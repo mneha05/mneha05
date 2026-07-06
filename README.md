@@ -43,9 +43,9 @@ Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls 
 
 > `[ agentic orchestration ] [ multi-agent systems ] [ autonomous investigation ]`
 
-A hierarchical multi-agent system where a **director agent decomposes reliability incidents into investigation plans and dispatches a fleet of specialized statistical worker agents** — each with its own toolset — to interrogate the data in parallel. Findings flow back up, get cross-validated, and synthesize into a defensible root-cause narrative. This is agentic AI applied to a problem ops teams actually bleed hours on: it doesn't summarize an incident, it *investigates* one — forming hypotheses, running statistical tests, and discarding dead ends autonomously.
+A hierarchical multi-agent system built on the **orchestrator-workers pattern**: a director agent decomposes reliability incidents into a task graph and **fans out to specialized statistical worker agents in parallel**, each operating with an isolated toolset and context. Results fan back in through a **cross-validation layer** that reconciles conflicting findings before synthesis — because a multi-agent system without verification is just N chances to hallucinate. Handles failure isolation per-worker (one agent dying doesn't kill the investigation) and produces structured, evidence-linked root-cause reports. It's the difference between an LLM that *summarizes* an incident and a system that *investigates* one: hypothesis generation, statistical testing, dead-end pruning — autonomously.
 
-`TypeScript` `LLM orchestration` `hierarchical agent architecture` `tool-use loops`
+`TypeScript` `orchestrator-workers architecture` `parallel task decomposition` `fault isolation` `structured LLM outputs`
 
 ---
 
@@ -53,9 +53,9 @@ A hierarchical multi-agent system where a **director agent decomposes reliabilit
 
 > `[ AI workflow tooling ] [ real-time bidirectional sync ] [ static analysis ]`
 
-An IDE for agentic workflows where **YAML and a visual graph are the same living document** — edit either, and a bidirectional sync engine reconciles both in real time with zero drift. Under the hood: ELK hierarchical auto-layout, a **custom variable scope analyzer** that statically catches broken data-flow between workflow steps before execution, and a **step-through simulator** that lets you debug an agent pipeline the way you'd debug code — breakpoints, state inspection, the works. Shipped with 33 passing tests because tooling people depend on doesn't get to be flaky.
+An IDE for agentic workflows where **YAML source and a visual DAG are two projections of one canonical state** — edit either, and a **bidirectional reconciliation engine** syncs them in real time without drift or destructive rewrites. The interesting engineering lives underneath: a **custom static analyzer** performs variable scope resolution and data-flow validation across workflow steps, catching broken references *before* execution — compiler techniques applied to workflow definitions. A **step-through simulator** works like a debugger for agent pipelines (breakpoints, state inspection, deterministic replay), and layout is handled by **ELK's layered graph algorithm** for readable auto-arrangement of arbitrary DAGs. Shipped with **33 passing tests** across the sync engine and analyzer, because developer tooling doesn't get to be flaky.
 
-`Next.js` `React Flow` `Monaco` `Zustand` `ELK layout engine` `deterministic sync`
+`Next.js` `React Flow` `Monaco` `Zustand` `static analysis` `bidirectional state reconciliation` `DAG layout algorithms`
 
 ---
 
@@ -63,9 +63,9 @@ An IDE for agentic workflows where **YAML and a visual graph are the same living
 
 > `[ anomaly detection ] [ AI decision support ] [ real-time telemetry ]`
 
-A multi-channel anomaly triage workbench that fuses live sensor telemetry with an **AI decision-support layer** — separating noise from drift from imminent failure, and explaining *why* it flagged what it flagged. Built on the conviction that anomaly detection without explainability is just a more expensive alarm: every flag comes with evidence, channel correlations, and a recommended action, so the human in the loop is deciding, not deciphering.
+A multi-channel anomaly triage workbench that ingests **streaming sensor telemetry** and layers AI-driven decision support on top — classifying deviations as noise, drift, or imminent failure, with **cross-channel correlation** to distinguish a failing sensor from a failing system. Designed around a production-reliability truth: **alert fatigue kills monitoring systems faster than missed alerts do.** Every flag ships with its supporting evidence, correlated channels, and a recommended action, keeping the human in the loop *deciding* instead of *deciphering*. Explainability isn't a feature here — it's the architecture.
 
-`TypeScript` `streaming telemetry` `explainable AI` `human-in-the-loop design`
+`TypeScript` `streaming telemetry ingestion` `cross-channel correlation` `explainable AI` `human-in-the-loop systems`
 
 ---
 
@@ -73,9 +73,9 @@ A multi-channel anomaly triage workbench that fuses live sensor telemetry with a
 
 > `[ analytics infrastructure ] [ in-browser compute ] [ data democratization ]`
 
-A full business-intelligence platform that runs **entirely in the browser** — a complete in-browser SQL engine (AlaSQL) paired with a **hand-rolled SVG charting system built from scratch**, no charting library, no backend, no data team in the critical path. Upload data, query it, visualize it — the entire analytical loop collapses into a single client-side artifact. Built to prove that "self-service analytics" can mean *actually* self-service.
+A full business-intelligence platform with a deliberately contrarian architecture: **the entire compute layer moved client-side.** An in-browser SQL engine (AlaSQL) executes queries directly over uploaded datasets, and visualization runs on a **charting engine hand-rolled from raw SVG primitives** — no chart library, no rendering dependency, full control over every pixel and every render pass. The result: **zero backend, zero infrastructure cost, zero data leaving the user's machine** — a privacy-preserving analytics loop that collapses upload → query → visualize into a single client-side artifact. Built to interrogate a real systems tradeoff: how much of the modern data stack is architecture, and how much is habit?
 
-`Next.js` `AlaSQL` `custom SVG rendering engine` `client-side data pipeline`
+`Next.js` `in-browser SQL execution` `custom SVG rendering engine` `client-side compute` `zero-infrastructure design`
 
 ---
 
@@ -83,9 +83,9 @@ A full business-intelligence platform that runs **entirely in the browser** — 
 
 > `[ dataflow systems ] [ visual programming ] [ pipeline orchestration ]`
 
-A visual environment for designing and reasoning about data pipelines as **composable, inspectable dataflow graphs** — connect stages, trace lineage, and understand what your pipeline does before it touches production data. Treats pipeline design as an architecture problem, not a scripting problem.
+A visual environment that models data pipelines as **typed, composable DAGs** — connect stages, trace **data lineage end-to-end**, and validate topology before anything touches production data. The design bet: pipeline failures are overwhelmingly *architecture* failures (implicit dependencies, untracked lineage, silent schema drift), so the tool makes the architecture inspectable first-class — you reason about the graph, not the glue code.
 
-`TypeScript` `Next.js` `graph-based dataflow modeling`
+`TypeScript` `Next.js` `DAG modeling` `data lineage` `topology validation`
 
 ---
 
@@ -93,9 +93,9 @@ A visual environment for designing and reasoning about data pipelines as **compo
 
 > `[ interactive analytics ] [ frontend performance engineering ]`
 
-Tabular data exploration engineered around one metric: **time-from-question-to-answer**. Production-grade front-end architecture tuned for fast filtering, slicing, and pattern-hunting across datasets — because exploratory analysis dies the moment the interface lags behind your thinking.
+Tabular data exploration engineered around a single latency budget: **interaction must never lag behind thought.** Filtering, slicing, and pattern-hunting across datasets with a front-end architecture tuned for render performance — because the moment an exploratory tool makes the analyst wait, the exploration ends. An exercise in treating **UI latency as a systems problem**, not a styling problem.
 
-`TypeScript` `Next.js` `performance-first architecture`
+`TypeScript` `Next.js` `interaction-latency optimization` `render performance`
 
 ---
 
@@ -103,28 +103,32 @@ Tabular data exploration engineered around one metric: **time-from-question-to-a
 
 > `[ natural-language data access ] [ query UX ]`
 
-A streamlined workspace that collapses the distance between a question and its answer — designed for the emerging pattern where **the query interface is a conversation**, not a syntax exam. Ask, refine, drill down.
+A workspace built for the pattern every data tool is converging on: **the query interface is a conversation, not a syntax exam.** Ask in natural language, refine iteratively, drill down — collapsing the distance between a question and its answer for users who shouldn't need to know what a LEFT JOIN is to get one.
 
-`TypeScript` `Next.js` `query-centric UX design`
+`TypeScript` `Next.js` `natural-language querying` `iterative refinement UX`
 
 ---
 
 ### Off-GitHub Builds
 
 ```
-POSTUREGUARD    Edge-AI wearable: MediaPipe pose estimation feeding a custom-trained
-                LSTM on Raspberry Pi, closing the loop through Arduino haptic
-                feedback — real-time ML inference on-device, end to end.
+POSTUREGUARD    Edge-AI wearable running the full inference pipeline on-device:
+                MediaPipe pose estimation feeding a custom-trained LSTM on a
+                Raspberry Pi, closing the control loop through Arduino haptic
+                feedback. Real-time sequence classification under embedded
+                compute and memory constraints — no cloud in the loop.
 
-BOILEREXCHANGE  Campus marketplace shipped by a 7-person team I built with:
-                Next.js + Django Ninja + PostgreSQL, Algolia-powered search,
-                Stripe payment infrastructure. Real users, real transactions.
+BOILEREXCHANGE  Campus marketplace shipped by a 7-person team: Next.js front-end,
+                Django Ninja API, PostgreSQL, Algolia full-text search, and
+                Stripe payment infrastructure. Real users, real money, real
+                consequences for bad schema decisions.
 
 NEURALDRIVE     Autonomous navigation stack in C++/PyTorch deployed on a Jetson
-                Nano — perception-to-control on embedded hardware.
+                Nano — the full perception-to-control loop running on
+                GPU-accelerated embedded hardware.
 
 OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
-                open-source EMR platform).
+                open-source EMR platform serving clinics worldwide).
 ```
 
 <br/>
