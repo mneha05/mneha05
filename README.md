@@ -164,23 +164,23 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 
 <br/>
 
+Deep in: agentic architectures (ReAct, orchestrator-workers, plan-and-execute) · LLM tool-use & function calling · RAG systems · GPU programming · embedded ML
 
-<img src="https://github-readme-stats.vercel.app/api?username=mneha05&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=C4B5FD&icon_color=8B5CF6" height="160" alt="stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mneha05&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=C4B5FD" height="160" alt="languages"/>
+<br/>
+────────────────────  C O M M I T   H I S T O R Y  ────────────────────
 
+<img src="https://ghchart.rshah.org/8B5CF6/mneha05" alt="contribution graph" width="90%"/>
 <br/><br/>
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   if (you.building includes "agents" || "ML infra" || "GPUs")  │
-│       → let's talk.                                             │
-│                                                                 │
-│   mahesh54@purdue.edu                                           │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
++------------------------------------------------------------------+
+|                                                                  |
+|  if (you.building includes "agents" || "ML infra" || "GPUs") {   |
+|      -> let's talk.                                              |
+|  }                                                               |
+|                                                                  |
+|  mahesh54@purdue.edu                                             |
+|                                                                  |
++------------------------------------------------------------------+
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4" width="100%"/>
-
 </div>
