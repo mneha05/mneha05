@@ -14,7 +14,8 @@
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-mneha05.github.io-1a1a2e?style=for-the-badge&labelColor=8B5CF6)](https://mneha05.github.io)
-[![LinkedIn](https://img.shields.io/badge/https://www.linkedin.com/in/neha-mahesh-815b442a9/?style=for-the-badge&labelColor=0A66C2)](https://linkedin.com/in/neha-mahesh)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-https://www.linkedin.com/in/neha-mahesh-815b442a9/?style=for-the-badge&labelColor=0A66C2)](https://linkedin.com/in/neha-mahesh-815b442a9
+)
 [![Email](https://img.shields.io/badge/EMAIL-mahesh54@purdue.edu-1a1a2e?style=for-the-badge&labelColor=EA4335)](mailto:mahesh54@purdue.edu)
 
 </div>
