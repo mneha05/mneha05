@@ -39,6 +39,16 @@ Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls 
 
 </div>
 
+### [Figment](https://github.com/mneha05/figment) — Self-Play Market-Making Arena for Figgie
+
+> `[ market microstructure ] [ Bayesian inference ] [ evolutionary self-play ]`
+
+A from-scratch engine for **Figgie** — the trading card game Jane Street invented to teach market intuition — plus AI traders that have to *reason about a hidden market* rather than pattern-match one. Underneath sits a **continuous double auction** with four independent order books, price-time priority, and exact settlement, and on top of it a **Bayesian market maker** that infers which suit secretly scores from its private hand and the order flow it observes — an exact **multivariate-hypergeometric posterior**, no black box — then prices every card at expected value and quotes a two-sided market **Avellaneda–Stoikov style**, skewing against inventory and widening its spread with belief entropy. An **evolutionary self-play** loop *learns* a market-making strategy from a deliberately timid start (**+\$6/game → +\$37/game** over 14 generations), and a multiplayer **Elo tournament** ranks the field. The result that makes the whole thing click: the noise traders **win the pot more often** yet **lose money every game** — because they overpay for it. *Edge ≠ outcome*, which is the entire game. Deterministic under a seed and pinned by **15 tests** asserting the market never creates or destroys a card or a dollar.
+
+`Python` `NumPy` `Bayesian inference` `Avellaneda–Stoikov market-making` `evolutionary optimization` `multiplayer Elo` `matplotlib`
+
+---
+
 ### [PARALLAX](https://github.com/mneha05/parallax) — Multi-Agent Reliability Investigation Platform
 
 > `[ agentic orchestration ] [ multi-agent systems ] [ autonomous investigation ]`
