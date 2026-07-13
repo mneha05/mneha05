@@ -37,11 +37,19 @@ Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls 
 
 <h2>SELECTED WORK</h2>
 
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++eight+builds%2C+one+throughline%3A+systems+that+act+++%E2%99%A6+%E2%99%A3;opening+with+the+flagship+%E2%86%93" alt="section tease" />
+
 </div>
 
 ### [Figment](https://github.com/mneha05/figment) — Self-Play Market-Making Arena for Figgie
 
 > `[ market microstructure ] [ Bayesian inference ] [ evolutionary self-play ]`
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mneha05/figment/main/assets/replay.gif" width="90%" alt="Figment — one Figgie round replayed: suit prices, the market maker's live Bayesian belief, and P&L"/>
+  <br/>
+  <sub><b>↑ live from the repo:</b> one real round replayed — suit prices, the maker's belief converging on the hidden goal suit, and P&amp;L. &nbsp;·&nbsp; <a href="https://github.com/mneha05/figment">open the repo →</a></sub>
+</p>
 
 A from-scratch engine for **Figgie** — the trading card game Jane Street invented to teach market intuition — plus AI traders that have to *reason about a hidden market* rather than pattern-match one. Underneath sits a **continuous double auction** with four independent order books, price-time priority, and exact settlement, and on top of it a **Bayesian market maker** that infers which suit secretly scores from its private hand and the order flow it observes — an exact **multivariate-hypergeometric posterior**, no black box — then prices every card at expected value and quotes a two-sided market **Avellaneda–Stoikov style**, skewing against inventory and widening its spread with belief entropy. An **evolutionary self-play** loop *learns* a market-making strategy from a deliberately timid start (**+\$6/game → +\$37/game** over 14 generations), and a multiplayer **Elo tournament** ranks the field. The result that makes the whole thing click: the noise traders **win the pot more often** yet **lose money every game** — because they overpay for it. *Edge ≠ outcome*, which is the entire game. Deterministic under a seed and pinned by **15 tests** asserting the market never creates or destroys a card or a dollar.
 
