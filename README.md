@@ -38,9 +38,35 @@ Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls 
 
 <h2>SELECTED WORK</h2>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++eight+builds%2C+one+throughline%3A+systems+that+act+++%E2%99%A6+%E2%99%A3;opening+with+the+flagship+%E2%86%93" alt="section tease" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++nine+builds%2C+one+throughline%3A+systems+that+act+++%E2%99%A6+%E2%99%A3;opening+with+the+flagship%3A+CUDA+kernels+%2B+a+serving+scheduler+%E2%86%93" alt="section tease" />
 
 </div>
+
+### [hetero-serve](https://github.com/mneha05/hetero-serve) — KV-Cache-Aware LLM Serving Scheduler + CUDA Paged-Attention Kernels
+
+> `[ CUDA kernels ] [ LLM inference ] [ distributed systems ] [ profiler-driven optimization ]`
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/hero.gif" width="92%" alt="hetero-serve — a shared prefix fills on one accelerator, a second request reuses it instead of recomputing, then the cached KV crosses the interconnect to a second GPU"/>
+  <br/>
+  <sub><b>↑ live from the repo:</b> a prefix fills, the next request <i>reuses</i> it instead of recomputing, then the cache crosses the interconnect. &nbsp;·&nbsp; <a href="https://mneha05.github.io/hetero-serve/">▶ drive it yourself in the browser →</a></sub>
+</p>
+
+When a request shares a long prefix with an earlier one — a system prompt, a RAG document, an earlier turn — its **KV cache already exists, but on the wrong accelerator**. You can run it where the cache is and wait behind a busy device, recompute the prefix from scratch, or drag the cache across the interconnect. That third option is a bandwidth-versus-compute trade, and this is a serving system built to find where it flips: a **paged KV cache** with 16-token blocks, refcounts, chain-hashed prefix sharing and LRU eviction; **continuous batching** with chunked prefill and recompute-preemption; and a router whose cost model prices *stay* against *migrate* in seconds, using per-device speeds it **measures at startup rather than assumes**. Workers are real OS processes over real TCP through a token-bucket shaper, so concurrent transfers genuinely contend — at 50 Mbps moving an 18.9 MB prefix loses to recomputing it, at 10 Gbps it wins, and cache-aware routing cuts end-to-end p50 from **3.60 s to 1.94 s** by having it both ways: the highest hit rate *and* spread load.
+
+Then profiling said a third of every decode step was not accelerator time at all — it was the host gathering KV blocks into contiguous tensors, overhead invented by paging the cache. So I wrote the kernel that deletes it, and then three more. **v1** fuses the gather away; **v2** adds FlashAttention-style online softmax so no score vector is ever materialised; **Nsight** then showed v2 was *occupancy*-starved rather than bandwidth-starved — 0.1 waves across 40 SMs, memory at 13.7%, compute at 11.3% — which produced **v3**, a context split that took it from **13.4% to 55.4% of a Tesla T4's peak memory bandwidth**, or **10–22× PyTorch's own SDPA** on paged data. Sweeping the split count caught my own heuristic being wrong: it targeted occupancy and picked 2 where 32 was 2.1× faster, because the online softmax is *sequential* and splitting shortens a dependent chain, not a wave count. There is also a **prefill kernel** (S query rows, causal, straight off the block table) and a **tensor-core version** where a 16-token KV page is exactly one 16×16×16 WMMA fragment — which is why `block_size = 16` was the right default before any of this existed. Grouped-query attention is supported throughout, and it moves the scheduler's answer: Llama-3's 4:1 ratio cuts the cache 4× and drops the migration crossover from **503 Mbps to 126 Mbps** — from needing a datacenter fabric to working on commodity networking.
+
+**101 tests, no mocks** — real processes, real sockets, kernels fuzz-tested against a numpy oracle and against each other. Five bugs are documented in the README, every one found by measuring rather than reading: a cost model that priced transfers against an idle link, "measured" device speeds that were really measuring the queue, a rejected request that hung forever, a multi-megabyte memcpy held under the engine lock, and a process group that deadlocked on the very workers meant to join it. The one I'd keep: I was *confident* the fourth was a serialisation-layout problem, benchmarked it first, and was wrong — that path was 5.8 ms. Profile before optimising applies to your own hypotheses too.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/architecture.png" width="92%" alt="hetero-serve architecture: a router control plane with a global prefix directory and a migrate-vs-recompute cost model; three workers on CUDA, Intel Arc GPU and NPU each with a paged KV cache and continuous batching; a data plane carrying KV blocks over shaped TCP or NCCL; and the five CUDA kernels"/>
+  <br/>
+  <sub>router decides <i>where</i>, each worker decides <i>when</i> &nbsp;·&nbsp; <a href="https://colab.research.google.com/github/mneha05/hetero-serve/blob/main/notebooks/verify_cuda_kernel.ipynb">▶ compile the kernels on a free Colab GPU →</a></sub>
+</p>
+
+`CUDA` `C++` `WMMA / tensor cores` `Nsight Compute` `PyTorch` `NumPy` `paged attention` `FlashAttention` `grouped-query attention` `NCCL / torch.distributed` `asyncio` `Docker` `OpenVINO`
+
+---
 
 ### [Figment](https://github.com/mneha05/figment) — Self-Play Market-Making Arena for Figgie
 
