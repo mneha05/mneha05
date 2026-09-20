@@ -12,10 +12,19 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=20&duration=2600&pause=700&color=C4B5FD&center=true&vCenter=true&width=720&lines=agentic+AI+systems+%2F%2F+LLM+orchestration+%2F%2F+ML+infrastructure;CS+%40+Purdue+%E2%80%94+Machine+Intelligence+track;SWE+Intern+%40+Qualcomm+%E2%80%94+autonomous+crash+triage;I+build+AI+that+does+the+work%2C+not+just+the+talking" alt="headline" />
 
 <br/>
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-nehamahesh.netlify.app-1a1a2e?style=for-the-badge&labelColor=8B5CF6)](https://nehamahesh.netlify.app/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&labelColor=0A66C2)](https://www.linkedin.com/in/neha-mahesh-purdue/)
-[![Email](https://img.shields.io/badge/EMAIL-mahesh54@purdue.edu-1a1a2e?style=for-the-badge&labelColor=EA4335)](mailto:mahesh54@purdue.edu)
-
+<p align="center">
+  <a href="https://nehamahesh.netlify.app/">
+    <img src="https://img.shields.io/badge/PORTFOLIO-nehamahesh.netlify.app-1a1a2e?style=for-the-badge&labelColor=8B5CF6" alt="Portfolio">
+  </a>
+  
+  <a href="https://www.linkedin.com/in/neha-mahesh-purdue/">
+    <img src="https://img.shields.io/badge/LINKEDIN-Neha%20Mahesh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  
+  <a href="mailto:mahesh54@purdue.edu">
+    <img src="https://img.shields.io/badge/EMAIL-mahesh54%40purdue.edu-1a1a2e?style=for-the-badge&labelColor=EA4335" alt="Email">
+  </a>
+</p>
 </div>
 
 <br/>
