@@ -1,5 +1,95 @@
 <div align="center">
 
+
+```
+███╗   ██╗███████╗██╗  ██╗ █████╗     ███╗   ███╗ █████╗ ██╗  ██╗███████╗███████╗██╗  ██╗
+████╗  ██║██╔════╝██║  ██║██╔══██╗    ████╗ ████║██╔══██╗██║  ██║██╔════╝██╔════╝██║  ██║
+██╔██╗ ██║█████╗  ███████║███████║    ██╔████╔██║███████║███████║█████╗  ███████╗███████║
+██║╚██╗██║██╔══╝  ██╔══██║██╔══██║    ██║╚██╔╝██║██╔══██║██╔══██║██╔══╝  ╚════██║██╔══██║
+██║ ╚████║███████╗██║  ██║██║  ██║    ██║ ╚═╝ ██║██║  ██║██║  ██║███████╗███████║██║  ██║
+╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
+```
+
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=20&duration=2600&pause=700&color=C4B5FD&center=true&vCenter=true&width=720&lines=agentic+AI+systems+%2F%2F+LLM+orchestration+%2F%2F+ML+infrastructure;CS+%40+Purdue+%E2%80%94+Machine+Intelligence+track;SWE+Intern+%40+Qualcomm+%E2%80%94+autonomous+crash+triage;I+build+AI+that+does+the+work%2C+not+just+the+talking" alt="headline" />
+
+
+<br/>
+
+
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-mneha05.github.io-1a1a2e?style=for-the-badge&labelColor=8B5CF6)](https://mneha05.github.io)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&labelColor=0A66C2)](https://www.linkedin.com/in/neha-mahesh-purdue/)
+[![Email](https://img.shields.io/badge/EMAIL-mahesh54@purdue.edu-1a1a2e?style=for-the-badge&labelColor=EA4335)](mailto:mahesh54@purdue.edu)
+
+
+</div>
+
+
+<br/>
+
+
+## About
+
+
+**CS junior @ Purdue University** — Machine Intelligence track, Mathematics minor. Currently **SWE Intern @ Qualcomm**, where I architect an autonomous, agentic crash-triage pipeline: an LLM-driven tool-use loop that ingests raw modem crash reports, autonomously resolves build artifacts, retrieves source context, and localizes root cause before a human engineer ever opens the log.
+
+
+> **The thesis behind everything I build:** LLMs stop being toys and start being infrastructure the moment you give them tools, guardrails, and a reason to act. *I design that layer.*
+
+
+Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls Who Code Purdue**
+
+
+<br/>
+
+
+<div align="center">
+
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" width="100%"/>
+
+
+<h2>SELECTED WORK</h2>
+
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++nine+builds%2C+one+throughline%3A+systems+that+act+++%E2%99%A6+%E2%99%A3;opening+with+the+flagship%3A+CUDA+kernels+%2B+a+serving+scheduler+%E2%86%93" alt="section tease" />
+
+
+</div>
+
+
+### [hetero-serve](https://github.com/mneha05/hetero-serve) — KV-Cache-Aware LLM Serving Scheduler + CUDA Paged-Attention Kernels
+
+
+> `[ CUDA kernels ] [ LLM inference ] [ distributed systems ] [ profiler-driven optimization ]`
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/hero.gif" width="92%" alt="hetero-serve — a shared prefix fills on one accelerator, a second request reuses it instead of recomputing, then the cached KV crosses the interconnect to a second GPU"/>
+  <br/>
+  <sub><b>↑ live from the repo:</b> a prefix fills, the next request <i>reuses</i> it instead of recomputing, then the cache crosses the interconnect. &nbsp;·&nbsp; <a href="https://mneha05.github.io/hetero-serve/">▶ drive it yourself in the browser →</a></sub>
+</p>
+
+
+When a request shares a long prefix with an earlier one — a system prompt, a RAG document, an earlier turn — its **KV cache already exists, but on the wrong accelerator**. You can run it where the cache is and wait behind a busy device, recompute the prefix from scratch, or drag the cache across the interconnect. That third option is a bandwidth-versus-compute trade, and this is a serving system built to find where it flips: a **paged KV cache** with 16-token blocks, refcounts, chain-hashed prefix sharing and LRU eviction; **continuous batching** with chunked prefill and recompute-preemption; and a router whose cost model prices *stay* against *migrate* in seconds, using per-device speeds it **measures at startup rather than assumes**. Workers are real OS processes over real TCP through a token-bucket shaper, so concurrent transfers genuinely contend — at 50 Mbps moving an 18.9 MB prefix loses to recomputing it, at 10 Gbps it wins, and cache-aware routing cuts end-to-end p50 from **3.60 s to 1.94 s** by having it both ways: the highest hit rate *and* spread load.
+
+<br/>
+
+### [attnc](https://github.com/mneha05/attnc) — Python-Embedded DSL + JIT Compiler for Fused CUDA Attention
+
+> `[ compiler design ] [ CUDA codegen ] [ symbolic tracing ] [ GPU inference ]`
+
+<p align="center">
+  <a href="https://mneha05.github.io/attnc/">
+    <img src="https://raw.githubusercontent.com/mneha05/attnc/main/docs/assets/attnc-demo.gif" width="92%" alt="attnc compiler playground composing causal, sliding-window, GQA, softcap, and ALiBi variants into optimized IR and fused CUDA"/>
+  </a>
+  <br/>
+  <sub><b>↑ live compiler explorer:</b> compose an attention variant and watch the Python DSL, optimized IR, CUDA body, and static tile plan change together. &nbsp;·&nbsp; <a href="https://mneha05.github.io/attnc/">▶ try it in the browser →</a></sub>
+</p>
+
+Attention kernels are fast when they are hand-tuned—and rigid when the model changes. **attnc** treats causal masking, sliding windows, GQA, logit softcaps, and ALiBi as a small program: two Python frontends lower into a shared IR, compiler passes simplify expressions and classify key tiles as skipped, fast, or predicated, and an NVRTC backend emits one fused online-softmax CUDA kernel. An independent NumPy interpreter anchors the correctness story with **160 randomized differential cases** across variant compositions, GQA layouts, and non-square decode shapes.
+<div align="center">
+
 ```
 ███╗   ██╗███████╗██╗  ██╗ █████╗     ███╗   ███╗ █████╗ ██╗  ██╗███████╗███████╗██╗  ██╗
 ████╗  ██║██╔════╝██║  ██║██╔══██╗    ████╗ ████║██╔══██╗██║  ██║██╔════╝██╔════╝██║  ██║
