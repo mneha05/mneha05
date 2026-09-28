@@ -49,6 +49,18 @@ Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls 
 
 </div>
 
+### [ProductPulse](https://github.com/mneha05/mneha05/tree/main/productpulse) — Product Analytics Data Platform
+
+> `[ Trino ] [ dbt ] [ Airflow ] [ Iceberg / Hive ] [ product analytics ]`
+
+Built an end-to-end event analytics stack around a synthetic social-product launch: deterministic telemetry with duplicate retries and late-arriving events flows through an **Airflow DAG** into an **Iceberg** warehouse on MinIO with a **Hive Metastore**, queried by **Trino** and transformed through **dbt-trino**. The staging layer uses incremental deduplication with a recent-partition lookback; downstream marts compute **DAU/MAU, feature adoption, app→feature→like→share funnels, D1/D7 cohort retention, session metrics, and treatment/control experiment conversion**.
+
+The project deliberately separates raw append-only ingestion from reproducible metric logic. dbt tests enforce event and model grain, while an independent Python metric oracle validates funnel, retention, and experiment behavior. **7 unit tests pass** on the zero-dependency fast path; Docker Compose defines the full local Trino + Iceberg + Hive + MinIO + Airflow stack.
+
+`Python` `SQL` `Trino` `dbt` `Airflow` `Apache Iceberg` `Hive Metastore` `MinIO/S3` `incremental ETL` `late-arriving data` `retention cohorts` `A/B testing`
+
+---
+
 ### [Media Systems Lab](https://github.com/mneha05/mneha05/tree/main/media-systems-lab) — AVOD Ad-Tech + Streaming Delivery + Content Recommendations
 
 > `[ AVOD / programmatic ads ] [ HLS / DASH / FFmpeg ] [ CDN / ABR ] [ recommender systems ]`
