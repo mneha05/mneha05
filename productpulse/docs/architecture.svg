@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330">
+<style>text{font-family:Arial,sans-serif;fill:#111827}.t{font-size:26px;font-weight:700}.s{font-size:18px}.b{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:16}.a{stroke:#64748b;stroke-width:3;marker-end:url(#m)}</style>
+<defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect class="b" x="25" y="90" width="180" height="115"/><text class="t" x="55" y="135">App Events</text><text class="s" x="52" y="170">synthetic telemetry</text>
+<rect class="b" x="255" y="90" width="180" height="115"/><text class="t" x="293" y="135">Airflow</text><text class="s" x="275" y="170">daily DAG + retries</text>
+<rect class="b" x="485" y="90" width="180" height="115"/><text class="t" x="515" y="135">Iceberg</text><text class="s" x="508" y="170">MinIO + Hive</text>
+<rect class="b" x="715" y="90" width="180" height="115"/><text class="t" x="760" y="135">Trino</text><text class="s" x="745" y="170">distributed SQL</text>
+<rect class="b" x="945" y="90" width="225" height="115"/><text class="t" x="1010" y="135">dbt</text><text class="s" x="972" y="170">metrics + tests + marts</text>
+<line class="a" x1="205" y1="148" x2="250" y2="148"/><line class="a" x1="435" y1="148" x2="480" y2="148"/><line class="a" x1="665" y1="148" x2="710" y2="148"/><line class="a" x1="895" y1="148" x2="940" y2="148"/>
+<text class="s" x="390" y="270">Funnels • D1/D7 retention • DAU/MAU • feature adoption • experiment lift</text>
+</svg>
