@@ -49,6 +49,20 @@ Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls 
 
 </div>
 
+### [Media Systems Lab](https://github.com/mneha05/mneha05/tree/main/media-systems-lab) — AVOD Ad-Tech + Streaming Delivery + Content Recommendations
+
+> `[ AVOD / programmatic ads ] [ HLS / DASH / FFmpeg ] [ CDN / ABR ] [ recommender systems ]`
+
+Built the **media path behind an ad-supported streaming product**, not a UI mock: an AVOD decision engine selects campaigns under targeting, CPM-floor, budget, pacing, and per-viewer frequency-cap constraints; **FreeWheel-style and Google Ad Manager-style adapter boundaries** normalize requests; a VAST parser resolves creatives and quartile beacons; the client path emits a CSAI payload while the server path **splices ads into HLS for SSAI**; and an idempotent event ledger turns impressions, completions, and clicks into CTR, completion-rate, and CPM-derived revenue metrics.
+
+The delivery side generates **HLS master/media playlists and MPEG-DASH MPDs**, produces executable **FFmpeg H.264/AAC transcoding plans**, selects renditions from measured throughput with an ABR safety margin, maintains a rolling live-HLS window, and simulates a byte-capacity **LRU CDN edge cache** with request hit rate, byte hit rate, origin traffic, edge-served traffic, and evictions. The personalization side is a two-stage **hybrid content recommender**: recency/completion-weighted content affinity + collaborative co-watch similarity + popularity candidates, followed by **MMR diversity reranking**, cold-start fallback, explanations, and leave-one-out **Recall@K / NDCG@K / catalog-coverage** evaluation.
+
+**17 unit tests · zero third-party runtime dependencies · deterministic synthetic traffic/viewing data.** Vendor integrations are deliberately modeled at the adapter boundary rather than presented as fake production credentials, so every claim in the repo is runnable and inspectable.
+
+`Python` `AVOD` `CPM / frequency capping` `VAST` `CSAI / SSAI` `HLS` `MPEG-DASH` `FFmpeg` `ABR` `CDN caching` `hybrid recommendation` `MMR` `NDCG`
+
+---
+
 ### [hetero-serve](https://github.com/mneha05/hetero-serve) — KV-Cache-Aware LLM Serving Scheduler + CUDA Paged-Attention Kernels
 
 > `[ CUDA kernels ] [ LLM inference ] [ distributed systems ] [ profiler-driven optimization ]`
