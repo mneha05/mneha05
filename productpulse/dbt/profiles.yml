@@ -1,0 +1,13 @@
+productpulse:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: productpulse
+      host: trino
+      port: 8080
+      database: iceberg
+      schema: productpulse
+      http_scheme: http
+      threads: 4

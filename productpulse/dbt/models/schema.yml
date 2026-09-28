@@ -1,0 +1,26 @@
+version: 2
+sources:
+  - name: productpulse
+    database: iceberg
+    schema: productpulse
+    tables:
+      - name: raw_events
+models:
+  - name: stg_events
+    columns:
+      - name: event_id
+        tests: [not_null, unique]
+      - name: user_id
+        tests: [not_null]
+      - name: event_name
+        tests:
+          - accepted_values:
+              values: ['app_open','feed_view','feature_view','like','share']
+  - name: int_sessions
+    columns:
+      - name: session_id
+        tests: [not_null, unique]
+  - name: fct_daily_product_metrics
+    columns:
+      - name: event_date
+        tests: [not_null, unique]
