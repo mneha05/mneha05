@@ -1,0 +1,30 @@
+<VAST version="3.0">
+  <Ad id="demo-auto-15">
+    <InLine>
+      <AdSystem>MediaSystemsLab</AdSystem>
+      <AdTitle>Demo 15s Spot</AdTitle>
+      <Impression>https://tracker.example/impression</Impression>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <TrackingEvents>
+              <Tracking event="start">https://tracker.example/start</Tracking>
+              <Tracking event="firstQuartile">https://tracker.example/q1</Tracking>
+              <Tracking event="midpoint">https://tracker.example/q2</Tracking>
+              <Tracking event="thirdQuartile">https://tracker.example/q3</Tracking>
+              <Tracking event="complete">https://tracker.example/complete</Tracking>
+            </TrackingEvents>
+            <AdParameters>demo=true</AdParameters>
+            <VideoClicks>
+              <ClickThrough>https://advertiser.example/landing</ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile type="video/mp4" width="1280" height="720">https://cdn.example/ad/demo-720p.mp4</MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
