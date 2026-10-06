@@ -1,13 +1,6 @@
 <div align="center">
 
-```
-███╗   ██╗███████╗██╗  ██╗ █████╗     ███╗   ███╗ █████╗ ██╗  ██╗███████╗███████╗██╗  ██╗
-████╗  ██║██╔════╝██║  ██║██╔══██╗    ████╗ ████║██╔══██╗██║  ██║██╔════╝██╔════╝██║  ██║
-██╔██╗ ██║█████╗  ███████║███████║    ██╔████╔██║███████║███████║█████╗  ███████╗███████║
-██║╚██╗██║██╔══╝  ██╔══██║██╔══██║    ██║╚██╔╝██║██╔══██║██╔══██║██╔══╝  ╚════██║██╔══██║
-██║ ╚████║███████╗██║  ██║██║  ██║    ██║ ╚═╝ ██║██║  ██║██║  ██║███████╗███████║██║  ██║
-╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
-```
+<img src="assets/snake-frame.svg" width="100%" alt="Neha Mahesh, with a snake circling the name"/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=20&duration=2600&pause=700&color=C4B5FD&center=true&vCenter=true&width=720&lines=agentic+AI+systems+%2F%2F+LLM+orchestration+%2F%2F+ML+infrastructure;CS+%40+Purdue+%E2%80%94+Machine+Intelligence+track;ex-SWE+Intern+%40+Qualcomm+%E2%80%94+autonomous+crash+triage;I+build+AI+that+does+the+work%2C+not+just+the+talking" alt="headline" />
 
@@ -27,7 +20,6 @@
 </p>
 </div>
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
 
 ## About
 
@@ -37,7 +29,6 @@
 
 Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls Who Code Purdue**
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
 
 <div align="center">
 
@@ -59,7 +50,7 @@ The project deliberately separates raw append-only ingestion from reproducible m
 
 `Python` `SQL` `Trino` `dbt` `Airflow` `Apache Iceberg` `Hive Metastore` `MinIO/S3` `incremental ETL` `late-arriving data` `retention cohorts` `A/B testing`
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [Media Systems Lab](https://github.com/mneha05/mneha05/tree/main/media-systems-lab) — AVOD Ad-Tech + Streaming Delivery + Content Recommendations
 
@@ -73,7 +64,7 @@ The delivery side generates **HLS master/media playlists and MPEG-DASH MPDs**, p
 
 `Python` `AVOD` `CPM / frequency capping` `VAST` `CSAI / SSAI` `HLS` `MPEG-DASH` `FFmpeg` `ABR` `CDN caching` `hybrid recommendation` `MMR` `NDCG`
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [hetero-serve](https://github.com/mneha05/hetero-serve) — KV-Cache-Aware LLM Serving Scheduler + CUDA Paged-Attention Kernels
 
@@ -99,7 +90,7 @@ Then profiling said a third of every decode step was not accelerator time at all
 
 `CUDA` `C++` `WMMA / tensor cores` `Nsight Compute` `PyTorch` `NumPy` `paged attention` `FlashAttention` `grouped-query attention` `NCCL / torch.distributed` `asyncio` `Docker` `OpenVINO`
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [attnc](https://github.com/mneha05/attnc) — Python-Embedded DSL + JIT Compiler for Fused CUDA Attention
 
@@ -115,7 +106,7 @@ Then profiling said a third of every decode step was not accelerator time at all
 
 Attention kernels are fast when they are hand-tuned—and rigid when the model changes. **attnc** treats causal masking, sliding windows, GQA, logit softcaps, and ALiBi as a small program: two Python frontends lower into a shared IR, compiler passes simplify expressions and classify key tiles as skipped, fast, or predicated, and an NVRTC backend emits one fused online-softmax CUDA kernel. An independent NumPy interpreter anchors the correctness story with **160 randomized differential cases** across variant compositions, GQA layouts, and non-square decode shapes.
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [Figment](https://github.com/mneha05/figment) — Self-Play Market-Making Arena for Figgie
 
@@ -131,7 +122,7 @@ A from-scratch engine for **Figgie** — the trading card game Jane Street inven
 
 `Python` `NumPy` `Bayesian inference` `Avellaneda–Stoikov market-making` `evolutionary optimization` `multiplayer Elo` `matplotlib`
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [PARALLAX](https://github.com/mneha05/parallax) — Multi-Agent Reliability Investigation Platform
 
@@ -141,7 +132,7 @@ A hierarchical multi-agent system built on the **orchestrator-workers pattern**:
 
 `TypeScript` `orchestrator-workers architecture` `parallel task decomposition` `fault isolation` `structured LLM outputs`
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [VibeGraph](https://github.com/mneha05/vibegraphv1) — Bidirectional Code-Canvas Workflow IDE
 
@@ -151,7 +142,7 @@ An IDE for agentic workflows where **YAML source and a visual DAG are two projec
 
 `Next.js` `React Flow` `Monaco` `Zustand` `static analysis` `bidirectional state reconciliation` `DAG layout algorithms`
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [Sentinel](https://github.com/mneha05/sentinel) — AI-Driven Sensor Anomaly Workbench
 
@@ -161,7 +152,7 @@ A multi-channel anomaly triage workbench that ingests **streaming sensor telemet
 
 `TypeScript` `streaming telemetry ingestion` `cross-channel correlation` `explainable AI` `human-in-the-loop systems`
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [MERIDIAN](https://github.com/mneha05/meridian) — Zero-Backend Self-Service BI Platform
 
@@ -171,7 +162,7 @@ A full business-intelligence platform with a deliberately contrarian architectur
 
 `Next.js` `in-browser SQL execution` `custom SVG rendering engine` `client-side compute` `zero-infrastructure design`
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [PipelineForge](https://github.com/mneha05/pipelineforge) — Visual Data Pipeline Architect
 
@@ -181,7 +172,7 @@ A visual environment that models data pipelines as **typed, composable DAGs** �
 
 `TypeScript` `Next.js` `DAG modeling` `data lineage` `topology validation`
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [GridLens](https://github.com/mneha05/gridlens) — High-Velocity Data Exploration
 
@@ -191,7 +182,7 @@ Tabular data exploration engineered around a single latency budget: **interactio
 
 `TypeScript` `Next.js` `interaction-latency optimization` `render performance`
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### [QueryDesk](https://github.com/mneha05/querydesk) — Conversational Analytics Workspace
 
@@ -201,7 +192,7 @@ A workspace built for the pattern every data tool is converging on: **the query 
 
 `TypeScript` `Next.js` `natural-language querying` `iterative refinement UX`
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
+---
 
 ### Off-GitHub Builds
 
@@ -226,7 +217,6 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 ```
 
 
-<p align="center"><img src="assets/snake-ltr.svg" width="100%" alt="snake divider"/></p>
 
 ```
 ──────────────────────────────  A R S E N A L  ──────────────────────────────
@@ -256,7 +246,6 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 </div>
 
 
-<p align="center"><img src="assets/snake-rtl.svg" width="100%" alt="snake divider"/></p>
 
 ```
 ────────────────────  C O M M I T   H I S T O R Y  ────────────────────
@@ -265,10 +254,6 @@ OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
 <div align="center">
 
 <img src="https://streak-stats.demolab.com?user=mneha05&theme=dark&hide_border=true&background=00000000&ring=8B5CF6&fire=A78BFA&currStreakLabel=C4B5FD&sideLabels=C4B5FD&dates=8B949E&stroke=8B5CF6" alt="streak stats" width="60%"/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=mneha05&bg_color=00000000&color=C4B5FD&line=8B5CF6&point=EDE9FE&area=true&area_color=8B5CF6&hide_border=true&custom_title=commits%20over%20time" alt="activity graph" width="100%"/>
-
-<br/><br/>
-
 <img src="https://ghchart.rshah.org/8B5CF6/mneha05" alt="contribution graph" width="92%"/>
 
 <br/><br/>
