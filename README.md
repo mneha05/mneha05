@@ -1,285 +1,247 @@
+<!-- ============================  HEADER  ============================ -->
 <div align="center">
 
-```
-███╗   ██╗███████╗██╗  ██╗ █████╗     ███╗   ███╗ █████╗ ██╗  ██╗███████╗███████╗██╗  ██╗
-████╗  ██║██╔════╝██║  ██║██╔══██╗    ████╗ ████║██╔══██╗██║  ██║██╔════╝██╔════╝██║  ██║
-██╔██╗ ██║█████╗  ███████║███████║    ██╔████╔██║███████║███████║█████╗  ███████╗███████║
-██║╚██╗██║██╔══╝  ██╔══██║██╔══██║    ██║╚██╔╝██║██╔══██║██╔══██║██╔══╝  ╚════██║██╔══██║
-██║ ╚████║███████╗██║  ██║██║  ██║    ██║ ╚═╝ ██║██║  ██║██║  ██║███████╗███████║██║  ██║
-╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
-```
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=210&section=header&text=Neha%20Mahesh&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=ML%20systems%20%E2%80%A2%20GPU%20kernels%20%E2%80%A2%20AI%20that%20actually%20ships&descSize=18&descAlignY=58" width="100%" alt="Neha Mahesh"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=20&duration=2600&pause=700&color=C4B5FD&center=true&vCenter=true&width=720&lines=agentic+AI+systems+%2F%2F+LLM+orchestration+%2F%2F+ML+infrastructure;CS+%40+Purdue+%E2%80%94+Machine+Intelligence+track;SWE+Intern+%40+Qualcomm+%E2%80%94+autonomous+crash+triage;I+build+AI+that+does+the+work%2C+not+just+the+talking" alt="headline" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&duration=2600&pause=800&color=A78BFA&center=true&vCenter=true&width=720&lines=CS+%40+Purdue+%C2%B7+Machine+Intelligence+%2B+Math+minor;ex-SWE+Intern+%40+Qualcomm+%C2%B7+agentic+crash+triage;writing+CUDA+kernels+for+fun+(yes+really);I+build+AI+that+does+the+work%2C+not+just+the+talking" alt="typing intro"/>
 
-<br/>
-<p align="center">
-  <a href="https://nehamahesh.netlify.app/">
-    <img src="https://img.shields.io/badge/PORTFOLIO-nehamahesh.netlify.app-1a1a2e?style=for-the-badge&labelColor=8B5CF6" alt="Portfolio">
-  </a>
-  
-  <a href="https://www.linkedin.com/in/neha-mahesh-purdue/">
-    <img src="https://img.shields.io/badge/LINKEDIN-Neha%20Mahesh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  
-  <a href="mailto:mahesh54@purdue.edu">
-    <img src="https://img.shields.io/badge/EMAIL-mahesh54%40purdue.edu-1a1a2e?style=for-the-badge&labelColor=EA4335" alt="Email">
-  </a>
+<p>
+  <a href="https://nehamahesh.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-nehamahesh.netlify.app-8B5CF6?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/neha-mahesh-purdue/"><img src="https://img.shields.io/badge/LinkedIn-Neha%20Mahesh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:mahesh54@purdue.edu"><img src="https://img.shields.io/badge/Email-mahesh54%40purdue.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
+
+<img src="https://komarev.com/ghpvc/?username=mneha05&label=profile%20visits&color=8B5CF6&style=flat-square" alt="profile visits"/>
+
 </div>
 
 <br/>
 
-## About
+<!-- ============================  WHOAMI  ============================ -->
 
-**CS junior @ Purdue University** — Machine Intelligence track, Mathematics minor. Currently **SWE Intern @ Qualcomm**, where I architect an autonomous, agentic crash-triage pipeline: an LLM-driven tool-use loop that ingests raw modem crash reports, autonomously resolves build artifacts, retrieves source context, and localizes root cause before a human engineer ever opens the log.
+```python
+class Neha:
+    school    = "Purdue University · CS (Machine Intelligence) · Math minor · class of 2028"
+    was       = "SWE Intern @ Qualcomm · modem/OOB software · LLM-driven crash triage"
+    leads     = ["Project Lead @ ML@Purdue", "Marketing Lead @ Girls Who Code Purdue"]
+    wins      = ["🥇 HackMIT", "🥈 InnovateHer"]
+    obsessed  = ["paged attention", "inference serving", "compilers", "agents with guardrails"]
+    fun_fact  = "taught Scratch to kids and CUDA to myself, same semester energy"
 
-> **The thesis behind everything I build:** LLMs stop being toys and start being infrastructure the moment you give them tools, guardrails, and a reason to act. *I design that layer.*
+    def thesis(self):
+        return "LLMs become infrastructure the moment you give them tools, guardrails, and a reason to act."
+```
 
-Off the keyboard: **Project Team Lead @ ML@Purdue** · **Marketing Lead @ Girls Who Code Purdue**
+<!-- ============================  NOW  ============================ -->
 
-<br/>
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🔭 Right now**
+- Making attention kernels fast on GPUs ([hetero-serve](https://github.com/mneha05/hetero-serve), [attnc](https://github.com/mneha05/attnc))
+- Open source PRs in flight: **Cloudflare quiche**, **NVIDIA cudf / Spark**, **Hugging Face**
+- Merged into **OpenMRS** 🎉
+
+</td>
+<td width="50%" valign="top">
+
+**💬 Ask me about**
+- Why `block_size = 16` was secretly the right answer
+- Recompute vs. migrate a KV cache (it depends on your network!)
+- Why the noise traders in Figgie win more pots and still go broke
+
+</td>
+</tr>
+</table>
 
 <div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" width="100%"/>
 
-<h2>SELECTED WORK</h2>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++nine+builds%2C+one+throughline%3A+systems+that+act+++%E2%99%A6+%E2%99%A3;opening+with+the+flagship%3A+CUDA+kernels+%2B+a+serving+scheduler+%E2%86%93" alt="section tease" />
-
+## ⚡ Flagship builds
 </div>
 
-### [ProductPulse](https://github.com/mneha05/mneha05/tree/main/productpulse) — Product Analytics Data Platform
-
-> `[ Trino ] [ dbt ] [ Airflow ] [ Iceberg / Hive ] [ product analytics ]`
-
-Built an end-to-end event analytics stack around a synthetic social-product launch: deterministic telemetry with duplicate retries and late-arriving events flows through an **Airflow DAG** into an **Iceberg** warehouse on MinIO with a **Hive Metastore**, queried by **Trino** and transformed through **dbt-trino**. The staging layer uses incremental deduplication with a recent-partition lookback; downstream marts compute **DAU/MAU, feature adoption, app→feature→like→share funnels, D1/D7 cohort retention, session metrics, and treatment/control experiment conversion**.
-
-The project deliberately separates raw append-only ingestion from reproducible metric logic. dbt tests enforce event and model grain, while an independent Python metric oracle validates funnel, retention, and experiment behavior. **7 unit tests pass** on the zero-dependency fast path; Docker Compose defines the full local Trino + Iceberg + Hive + MinIO + Airflow stack.
-
-`Python` `SQL` `Trino` `dbt` `Airflow` `Apache Iceberg` `Hive Metastore` `MinIO/S3` `incremental ETL` `late-arriving data` `retention cohorts` `A/B testing`
-
----
-
-### [Media Systems Lab](https://github.com/mneha05/mneha05/tree/main/media-systems-lab) — AVOD Ad-Tech + Streaming Delivery + Content Recommendations
-
-> `[ AVOD / programmatic ads ] [ HLS / DASH / FFmpeg ] [ CDN / ABR ] [ recommender systems ]`
-
-Built the **media path behind an ad-supported streaming product**, not a UI mock: an AVOD decision engine selects campaigns under targeting, CPM-floor, budget, pacing, and per-viewer frequency-cap constraints; **FreeWheel-style and Google Ad Manager-style adapter boundaries** normalize requests; a VAST parser resolves creatives and quartile beacons; the client path emits a CSAI payload while the server path **splices ads into HLS for SSAI**; and an idempotent event ledger turns impressions, completions, and clicks into CTR, completion-rate, and CPM-derived revenue metrics.
-
-The delivery side generates **HLS master/media playlists and MPEG-DASH MPDs**, produces executable **FFmpeg H.264/AAC transcoding plans**, selects renditions from measured throughput with an ABR safety margin, maintains a rolling live-HLS window, and simulates a byte-capacity **LRU CDN edge cache** with request hit rate, byte hit rate, origin traffic, edge-served traffic, and evictions. The personalization side is a two-stage **hybrid content recommender**: recency/completion-weighted content affinity + collaborative co-watch similarity + popularity candidates, followed by **MMR diversity reranking**, cold-start fallback, explanations, and leave-one-out **Recall@K / NDCG@K / catalog-coverage** evaluation.
-
-**17 unit tests · zero third-party runtime dependencies · deterministic synthetic traffic/viewing data.** Vendor integrations are deliberately modeled at the adapter boundary rather than presented as fake production credentials, so every claim in the repo is runnable and inspectable.
-
-`Python` `AVOD` `CPM / frequency capping` `VAST` `CSAI / SSAI` `HLS` `MPEG-DASH` `FFmpeg` `ABR` `CDN caching` `hybrid recommendation` `MMR` `NDCG`
-
----
-
-### [hetero-serve](https://github.com/mneha05/hetero-serve) — KV-Cache-Aware LLM Serving Scheduler + CUDA Paged-Attention Kernels
-
-> `[ CUDA kernels ] [ LLM inference ] [ distributed systems ] [ profiler-driven optimization ]`
+### 🧠 [hetero-serve](https://github.com/mneha05/hetero-serve) · KV-cache-aware LLM serving + CUDA paged-attention kernels
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/hero.gif" width="92%" alt="hetero-serve — a shared prefix fills on one accelerator, a second request reuses it instead of recomputing, then the cached KV crosses the interconnect to a second GPU"/>
+  <img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/hero.gif" width="92%" alt="hetero-serve: a shared prefix fills on one accelerator, a second request reuses it, then the cached KV crosses the interconnect to a second GPU"/>
   <br/>
-  <sub><b>↑ live from the repo:</b> a prefix fills, the next request <i>reuses</i> it instead of recomputing, then the cache crosses the interconnect. &nbsp;·&nbsp; <a href="https://mneha05.github.io/hetero-serve/">▶ drive it yourself in the browser →</a></sub>
+  <sub>a prefix fills, the next request <i>reuses</i> it, then the cache crosses the interconnect &nbsp;·&nbsp; <a href="https://mneha05.github.io/hetero-serve/">▶ drive it in your browser</a> &nbsp;·&nbsp; <a href="https://colab.research.google.com/github/mneha05/hetero-serve/blob/main/notebooks/verify_cuda_kernel.ipynb">▶ compile the kernels on free Colab</a></sub>
 </p>
 
-When a request shares a long prefix with an earlier one — a system prompt, a RAG document, an earlier turn — its **KV cache already exists, but on the wrong accelerator**. You can run it where the cache is and wait behind a busy device, recompute the prefix from scratch, or drag the cache across the interconnect. That third option is a bandwidth-versus-compute trade, and this is a serving system built to find where it flips: a **paged KV cache** with 16-token blocks, refcounts, chain-hashed prefix sharing and LRU eviction; **continuous batching** with chunked prefill and recompute-preemption; and a router whose cost model prices *stay* against *migrate* in seconds, using per-device speeds it **measures at startup rather than assumes**. Workers are real OS processes over real TCP through a token-bucket shaper, so concurrent transfers genuinely contend — at 50 Mbps moving an 18.9 MB prefix loses to recomputing it, at 10 Gbps it wins, and cache-aware routing cuts end-to-end p50 from **3.60 s to 1.94 s** by having it both ways: the highest hit rate *and* spread load.
+A serving system that answers one question: when a request's KV cache already exists **on the wrong accelerator**, should you wait, recompute, or move it?
 
-Then profiling said a third of every decode step was not accelerator time at all — it was the host gathering KV blocks into contiguous tensors, overhead invented by paging the cache. So I wrote the kernel that deletes it, and then three more. **v1** fuses the gather away; **v2** adds FlashAttention-style online softmax so no score vector is ever materialised; **Nsight** then showed v2 was *occupancy*-starved rather than bandwidth-starved — 0.1 waves across 40 SMs, memory at 13.7%, compute at 11.3% — which produced **v3**, a context split that took it from **13.4% to 55.4% of a Tesla T4's peak memory bandwidth**, or **10–22× PyTorch's own SDPA** on paged data. Sweeping the split count caught my own heuristic being wrong: it targeted occupancy and picked 2 where 32 was 2.1× faster, because the online softmax is *sequential* and splitting shortens a dependent chain, not a wave count. There is also a **prefill kernel** (S query rows, causal, straight off the block table) and a **tensor-core version** where a 16-token KV page is exactly one 16×16×16 WMMA fragment — which is why `block_size = 16` was the right default before any of this existed. Grouped-query attention is supported throughout, and it moves the scheduler's answer: Llama-3's 4:1 ratio cuts the cache 4× and drops the migration crossover from **503 Mbps to 126 Mbps** — from needing a datacenter fabric to working on commodity networking.
+| | |
+|---|---|
+| 🚀 **55.4%** of Tesla T4 peak memory bandwidth | up from 13.4%, **10 to 22× PyTorch SDPA** on paged data |
+| ⏱️ **p50 3.60 s → 1.94 s** | cache-aware routing: highest hit rate *and* spread load |
+| 🧩 **5 hand-written CUDA kernels** | fused gather, online softmax, context split, prefill, tensor-core WMMA |
+| ✅ **101 tests, zero mocks** | real processes, real sockets, kernels fuzzed against a NumPy oracle |
 
-**101 tests, no mocks** — real processes, real sockets, kernels fuzz-tested against a numpy oracle and against each other. Five bugs are documented in the README, every one found by measuring rather than reading: a cost model that priced transfers against an idle link, "measured" device speeds that were really measuring the queue, a rejected request that hung forever, a multi-megabyte memcpy held under the engine lock, and a process group that deadlocked on the very workers meant to join it. The one I'd keep: I was *confident* the fourth was a serialisation-layout problem, benchmarked it first, and was wrong — that path was 5.8 ms. Profile before optimising applies to your own hypotheses too.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/architecture.png" width="92%" alt="hetero-serve architecture: a router control plane with a global prefix directory and a migrate-vs-recompute cost model; three workers on CUDA, Intel Arc GPU and NPU each with a paged KV cache and continuous batching; a data plane carrying KV blocks over shaped TCP or NCCL; and the five CUDA kernels"/>
-  <br/>
-  <sub>router decides <i>where</i>, each worker decides <i>when</i> &nbsp;·&nbsp; <a href="https://colab.research.google.com/github/mneha05/hetero-serve/blob/main/notebooks/verify_cuda_kernel.ipynb">▶ compile the kernels on a free Colab GPU →</a></sub>
-</p>
-
-`CUDA` `C++` `WMMA / tensor cores` `Nsight Compute` `PyTorch` `NumPy` `paged attention` `FlashAttention` `grouped-query attention` `NCCL / torch.distributed` `asyncio` `Docker` `OpenVINO`
-
----
-
-### [attnc](https://github.com/mneha05/attnc) — Python-Embedded DSL + JIT Compiler for Fused CUDA Attention
-
-> `[ compiler design ] [ CUDA codegen ] [ symbolic tracing ] [ GPU inference ]`
-
-<p align="center">
-  <a href="https://mneha05.github.io/attnc/">
-    <img src="https://raw.githubusercontent.com/mneha05/attnc/main/docs/assets/attnc-demo.gif" width="92%" alt="attnc compiler playground composing causal, sliding-window, GQA, softcap, and ALiBi variants into optimized IR and fused CUDA"/>
-  </a>
-  <br/>
-  <sub><b>↑ live compiler explorer:</b> compose an attention variant and watch the Python DSL, optimized IR, CUDA body, and static tile plan change together. &nbsp;·&nbsp; <a href="https://mneha05.github.io/attnc/">▶ try it in the browser →</a></sub>
-</p>
-
-Attention kernels are fast when they are hand-tuned—and rigid when the model changes. **attnc** treats causal masking, sliding windows, GQA, logit softcaps, and ALiBi as a small program: two Python frontends lower into a shared IR, compiler passes simplify expressions and classify key tiles as skipped, fast, or predicated, and an NVRTC backend emits one fused online-softmax CUDA kernel. An independent NumPy interpreter anchors the correctness story with **160 randomized differential cases** across variant compositions, GQA layouts, and non-square decode shapes.
-
----
-
-### [Figment](https://github.com/mneha05/figment) — Self-Play Market-Making Arena for Figgie
-
-> `[ market microstructure ] [ Bayesian inference ] [ evolutionary self-play ]`
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mneha05/figment/main/assets/replay.gif" width="90%" alt="Figment — one Figgie round replayed: suit prices, the market maker's live Bayesian belief, and P&L"/>
-  <br/>
-  <sub><b>↑ live from the repo:</b> one real round replayed — suit prices, the maker's belief converging on the hidden goal suit, and P&amp;L. &nbsp;·&nbsp; <a href="https://github.com/mneha05/figment">open the repo →</a></sub>
-</p>
-
-A from-scratch engine for **Figgie** — the trading card game Jane Street invented to teach market intuition — plus AI traders that have to *reason about a hidden market* rather than pattern-match one. Underneath sits a **continuous double auction** with four independent order books, price-time priority, and exact settlement, and on top of it a **Bayesian market maker** that infers which suit secretly scores from its private hand and the order flow it observes — an exact **multivariate-hypergeometric posterior**, no black box — then prices every card at expected value and quotes a two-sided market **Avellaneda–Stoikov style**, skewing against inventory and widening its spread with belief entropy. An **evolutionary self-play** loop *learns* a market-making strategy from a deliberately timid start (**+\$6/game → +\$37/game** over 14 generations), and a multiplayer **Elo tournament** ranks the field. The result that makes the whole thing click: the noise traders **win the pot more often** yet **lose money every game** — because they overpay for it. *Edge ≠ outcome*, which is the entire game. Deterministic under a seed and pinned by **15 tests** asserting the market never creates or destroys a card or a dollar.
-
-`Python` `NumPy` `Bayesian inference` `Avellaneda–Stoikov market-making` `evolutionary optimization` `multiplayer Elo` `matplotlib`
-
----
-
-### [PARALLAX](https://github.com/mneha05/parallax) — Multi-Agent Reliability Investigation Platform
-
-> `[ agentic orchestration ] [ multi-agent systems ] [ autonomous investigation ]`
-
-A hierarchical multi-agent system built on the **orchestrator-workers pattern**: a director agent decomposes reliability incidents into a task graph and **fans out to specialized statistical worker agents in parallel**, each operating with an isolated toolset and context. Results fan back in through a **cross-validation layer** that reconciles conflicting findings before synthesis — because a multi-agent system without verification is just N chances to hallucinate. Handles failure isolation per-worker (one agent dying doesn't kill the investigation) and produces structured, evidence-linked root-cause reports. It's the difference between an LLM that *summarizes* an incident and a system that *investigates* one: hypothesis generation, statistical testing, dead-end pruning — autonomously.
-
-`TypeScript` `orchestrator-workers architecture` `parallel task decomposition` `fault isolation` `structured LLM outputs`
-
----
-
-### [VibeGraph](https://github.com/mneha05/vibegraphv1) — Bidirectional Code-Canvas Workflow IDE
-
-> `[ AI workflow tooling ] [ real-time bidirectional sync ] [ static analysis ]`
-
-An IDE for agentic workflows where **YAML source and a visual DAG are two projections of one canonical state** — edit either, and a **bidirectional reconciliation engine** syncs them in real time without drift or destructive rewrites. The interesting engineering lives underneath: a **custom static analyzer** performs variable scope resolution and data-flow validation across workflow steps, catching broken references *before* execution — compiler techniques applied to workflow definitions. A **step-through simulator** works like a debugger for agent pipelines (breakpoints, state inspection, deterministic replay), and layout is handled by **ELK's layered graph algorithm** for readable auto-arrangement of arbitrary DAGs. Shipped with **33 passing tests** across the sync engine and analyzer, because developer tooling doesn't get to be flaky.
-
-`Next.js` `React Flow` `Monaco` `Zustand` `static analysis` `bidirectional state reconciliation` `DAG layout algorithms`
-
----
-
-### [Sentinel](https://github.com/mneha05/sentinel) — AI-Driven Sensor Anomaly Workbench
-
-> `[ anomaly detection ] [ AI decision support ] [ real-time telemetry ]`
-
-A multi-channel anomaly triage workbench that ingests **streaming sensor telemetry** and layers AI-driven decision support on top — classifying deviations as noise, drift, or imminent failure, with **cross-channel correlation** to distinguish a failing sensor from a failing system. Designed around a production-reliability truth: **alert fatigue kills monitoring systems faster than missed alerts do.** Every flag ships with its supporting evidence, correlated channels, and a recommended action, keeping the human in the loop *deciding* instead of *deciphering*. Explainability isn't a feature here — it's the architecture.
-
-`TypeScript` `streaming telemetry ingestion` `cross-channel correlation` `explainable AI` `human-in-the-loop systems`
-
----
-
-### [MERIDIAN](https://github.com/mneha05/meridian) — Zero-Backend Self-Service BI Platform
-
-> `[ analytics infrastructure ] [ in-browser compute ] [ data democratization ]`
-
-A full business-intelligence platform with a deliberately contrarian architecture: **the entire compute layer moved client-side.** An in-browser SQL engine (AlaSQL) executes queries directly over uploaded datasets, and visualization runs on a **charting engine hand-rolled from raw SVG primitives** — no chart library, no rendering dependency, full control over every pixel and every render pass. The result: **zero backend, zero infrastructure cost, zero data leaving the user's machine** — a privacy-preserving analytics loop that collapses upload → query → visualize into a single client-side artifact. Built to interrogate a real systems tradeoff: how much of the modern data stack is architecture, and how much is habit?
-
-`Next.js` `in-browser SQL execution` `custom SVG rendering engine` `client-side compute` `zero-infrastructure design`
-
----
-
-### [PipelineForge](https://github.com/mneha05/pipelineforge) — Visual Data Pipeline Architect
-
-> `[ dataflow systems ] [ visual programming ] [ pipeline orchestration ]`
-
-A visual environment that models data pipelines as **typed, composable DAGs** — connect stages, trace **data lineage end-to-end**, and validate topology before anything touches production data. The design bet: pipeline failures are overwhelmingly *architecture* failures (implicit dependencies, untracked lineage, silent schema drift), so the tool makes the architecture inspectable first-class — you reason about the graph, not the glue code.
-
-`TypeScript` `Next.js` `DAG modeling` `data lineage` `topology validation`
-
----
-
-### [GridLens](https://github.com/mneha05/gridlens) — High-Velocity Data Exploration
-
-> `[ interactive analytics ] [ frontend performance engineering ]`
-
-Tabular data exploration engineered around a single latency budget: **interaction must never lag behind thought.** Filtering, slicing, and pattern-hunting across datasets with a front-end architecture tuned for render performance — because the moment an exploratory tool makes the analyst wait, the exploration ends. An exercise in treating **UI latency as a systems problem**, not a styling problem.
-
-`TypeScript` `Next.js` `interaction-latency optimization` `render performance`
-
----
-
-### [QueryDesk](https://github.com/mneha05/querydesk) — Conversational Analytics Workspace
-
-> `[ natural-language data access ] [ query UX ]`
-
-A workspace built for the pattern every data tool is converging on: **the query interface is a conversation, not a syntax exam.** Ask in natural language, refine iteratively, drill down — collapsing the distance between a question and its answer for users who shouldn't need to know what a LEFT JOIN is to get one.
-
-`TypeScript` `Next.js` `natural-language querying` `iterative refinement UX`
-
----
-
-### Off-GitHub Builds
-
-```
-POSTUREGUARD    Edge-AI wearable running the full inference pipeline on-device:
-                MediaPipe pose estimation feeding a custom-trained LSTM on a
-                Raspberry Pi, closing the control loop through Arduino haptic
-                feedback. Real-time sequence classification under embedded
-                compute and memory constraints — no cloud in the loop.
-
-BOILEREXCHANGE  Campus marketplace shipped by a 7-person team: Next.js front-end,
-                Django Ninja API, PostgreSQL, Algolia full-text search, and
-                Stripe payment infrastructure. Real users, real money, real
-                consequences for bad schema decisions.
-
-NEURALDRIVE     Autonomous navigation stack in C++/PyTorch deployed on a Jetson
-                Nano — the full perception-to-control loop running on
-                GPU-accelerated embedded hardware.
-
-OPEN SOURCE     Active contributions in flight: freeCodeCamp, OpenMRS (global
-                open-source EMR platform serving clinics worldwide).
-```
-
+<details>
+<summary><b>📖 the full engineering story (it's a good one)</b></summary>
 <br/>
 
+The core is a **paged KV cache** (16-token blocks, refcounts, chain-hashed prefix sharing, LRU eviction), **continuous batching** with chunked prefill and recompute-preemption, and a router whose cost model prices *stay* vs *migrate* in seconds using per-device speeds it **measures at startup rather than assumes**. Workers are real OS processes over real TCP through a token-bucket shaper, so transfers genuinely contend: at 50 Mbps moving an 18.9 MB prefix loses to recomputing it, at 10 Gbps it wins.
+
+Then profiling said a third of every decode step wasn't accelerator time at all. It was the host gathering KV blocks into contiguous tensors. So I wrote the kernel that deletes it, then three more. **v1** fuses the gather away. **v2** adds FlashAttention-style online softmax. **Nsight** showed v2 was *occupancy*-starved (0.1 waves across 40 SMs), which produced **v3**, a context split that took it from 13.4% to 55.4% of peak bandwidth. Sweeping the split count caught my own heuristic being wrong: it picked 2 where 32 was 2.1× faster, because online softmax is *sequential* and splitting shortens a dependent chain, not a wave count. A 16-token KV page is exactly one 16×16×16 WMMA fragment, which is why the tensor-core version fits so cleanly.
+
+GQA is supported throughout and it moves the scheduler's answer: Llama-3's 4:1 ratio drops the migration crossover from **503 Mbps to 126 Mbps**, from datacenter fabric to commodity networking.
+
+Five bugs are documented in the repo, each found by measuring rather than reading. My favorite: I was *confident* one was a serialization-layout problem, benchmarked first, and was wrong. Profile before optimizing applies to your own hypotheses too.
+
+<p align="center"><img src="https://raw.githubusercontent.com/mneha05/hetero-serve/main/docs/architecture.png" width="92%" alt="hetero-serve architecture"/></p>
+</details>
+
+`CUDA` `C++` `WMMA` `Nsight Compute` `PyTorch` `FlashAttention` `GQA` `NCCL` `asyncio` `OpenVINO` `Docker`
+
+---
+
+### 🛠️ [attnc](https://github.com/mneha05/attnc) · a tiny compiler that writes fused CUDA attention for you
+
+<p align="center">
+  <a href="https://mneha05.github.io/attnc/"><img src="https://raw.githubusercontent.com/mneha05/attnc/main/docs/assets/attnc-demo.gif" width="92%" alt="attnc playground composing attention variants into IR and fused CUDA"/></a>
+  <br/>
+  <sub>compose a variant, watch the DSL, IR, CUDA, and tile plan change together &nbsp;·&nbsp; <a href="https://mneha05.github.io/attnc/">▶ try the playground</a></sub>
+</p>
+
+Hand-tuned attention kernels are fast and rigid. **attnc** treats causal masks, sliding windows, GQA, softcaps, and ALiBi as a *program*: Python DSL → shared IR → passes that classify tiles as skipped / fast / predicated → NVRTC emits **one fused online-softmax kernel**. Correctness is anchored by **160 randomized differential tests** against an independent NumPy interpreter.
+
+`Python` `CUDA` `NVRTC` `IR passes` `symbolic tracing` `compiler design`
+
+---
+
+### 🃏 [Figment](https://github.com/mneha05/figment) · self-play market-making arena for Jane Street's Figgie
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mneha05/figment/main/assets/replay.gif" width="88%" alt="Figment: one Figgie round replayed with prices, Bayesian belief, and P&L"/>
+</p>
+
+A from-scratch **continuous double auction** (4 order books, price-time priority) plus a **Bayesian market maker** that infers the hidden goal suit with an exact multivariate-hypergeometric posterior and quotes **Avellaneda–Stoikov style**. Evolutionary self-play grew a timid bot from **+$6 to +$37 per game** in 14 generations. Best result: noise traders *win the pot more often* yet *lose money every game*. **Edge ≠ outcome.** 15 tests prove the market never creates or destroys a card or a dollar.
+
+`Python` `NumPy` `Bayesian inference` `market microstructure` `evolutionary optimization` `Elo`
+
+<!-- ============================  MORE  ============================ -->
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" width="100%"/>
+
+## 🧪 More from the lab
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📊 <a href="https://github.com/mneha05/mneha05/tree/main/productpulse">ProductPulse</a></h4>
+Airflow → Iceberg → Trino → dbt analytics stack computing DAU/MAU, funnels, D1/D7 retention, and A/B conversion, with a Python metric oracle checking dbt's math.<br/><br/>
+<code>dbt</code> <code>Trino</code> <code>Airflow</code> <code>Iceberg</code>
+</td>
+<td width="50%" valign="top">
+<h4>📺 <a href="https://github.com/mneha05/mneha05/tree/main/media-systems-lab">Media Systems Lab</a></h4>
+The plumbing behind ad-supported streaming: AVOD decisioning with pacing and frequency caps, VAST parsing, SSAI splicing into HLS, ABR, an LRU CDN edge sim, and an MMR-reranked recommender. 17 tests.<br/><br/>
+<code>HLS/DASH</code> <code>FFmpeg</code> <code>VAST</code> <code>RecSys</code>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h4>🕵️ <a href="https://github.com/mneha05/parallax">PARALLAX</a></h4>
+Multi-agent reliability investigator: a director agent fans incidents out to parallel statistical workers, then a cross-validation layer reconciles their findings. Because N agents without verification is N chances to hallucinate.<br/><br/>
+<code>TypeScript</code> <code>orchestrator-workers</code> <code>fault isolation</code>
+</td>
+<td valign="top">
+<h4>🔀 <a href="https://github.com/mneha05/vibegraphv1">VibeGraph</a></h4>
+Workflow IDE where YAML and a visual DAG are two views of one state, synced both ways. Custom static analyzer catches broken references before runtime, plus a step-through debugger for agent pipelines. 33 tests.<br/><br/>
+<code>Next.js</code> <code>React Flow</code> <code>Monaco</code> <code>ELK</code>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h4>🛡️ <a href="https://github.com/mneha05/aegismesh-rs">AegisMesh</a></h4>
+3-replica Rust service with quorum writes, WAL persistence, failover routing, replica catch-up, and a 3-node chaos test in green CI.<br/><br/>
+<code>Rust</code> <code>replication</code> <code>chaos testing</code>
+</td>
+<td valign="top">
+<h4>🦾 <a href="https://github.com/mneha05/flowctrl-lab">FlowCtrl Lab</a></h4>
+NumPy-only showdown of behavior cloning vs. diffusion policy vs. flow matching on a simulated manipulation task with bimodal demos.<br/><br/>
+<code>imitation learning</code> <code>diffusion</code> <code>flow matching</code>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h4>📡 <a href="https://github.com/mneha05/sentinel">Sentinel</a></h4>
+Sensor anomaly workbench that sorts deviations into noise, drift, or imminent failure, and ships every alert with its evidence. Built against alert fatigue.<br/><br/>
+<code>TypeScript</code> <code>telemetry</code> <code>explainable AI</code>
+</td>
+<td valign="top">
+<h4>📈 <a href="https://github.com/mneha05/meridian">MERIDIAN</a></h4>
+Zero-backend BI: in-browser SQL plus a charting engine hand-rolled from raw SVG. Zero infra cost, zero data leaves your machine.<br/><br/>
+<code>Next.js</code> <code>AlaSQL</code> <code>custom SVG</code>
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>➕ even more (PipelineForge · GridLens · QueryDesk)</b></summary>
+<br/>
+
+- **[PipelineForge](https://github.com/mneha05/pipelineforge)** · data pipelines as typed, composable DAGs with end-to-end lineage and topology validation
+- **[GridLens](https://github.com/mneha05/gridlens)** · tabular exploration built around one rule: interaction never lags behind thought
+- **[QueryDesk](https://github.com/mneha05/querydesk)** · conversational analytics, because nobody should need a LEFT JOIN to get an answer
+</details>
+
+<!-- ============================  HARDWARE  ============================ -->
+
 ```
-──────────────────────────────  A R S E N A L  ──────────────────────────────
+┌─ off-github builds ───────────────────────────────────────────────────────┐
+│  POSTUREGUARD    edge-AI wearable · MediaPipe → LSTM on a Raspberry Pi    │
+│                  → Arduino haptics · no cloud in the loop                 │
+│  NEURALDRIVE     autonomous nav in C++/PyTorch on a Jetson Nano           │
+│  BOILEREXCHANGE  campus marketplace, 7-person team · Next.js, Django      │
+│                  Ninja, Postgres, Algolia, Stripe · real users, real $    │
+└───────────────────────────────────────────────────────────────────────────┘
 ```
+
+<!-- ============================  STACK  ============================ -->
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python)
-![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript)
-![C++](https://img.shields.io/badge/C++-0d1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)
-![C](https://img.shields.io/badge/C-0d1117?style=for-the-badge&logo=c&logoColor=A8B9CC)
-![R](https://img.shields.io/badge/R-0d1117?style=for-the-badge&logo=r&logoColor=276DC3)
+## 🧰 Toolbox
 
-![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=for-the-badge&logo=pytorch)
-![CUDA](https://img.shields.io/badge/CUDA-0d1117?style=for-the-badge&logo=nvidia&logoColor=76B900)
-![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=for-the-badge&logo=langchain&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi)
-![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react)
-![Django](https://img.shields.io/badge/Django-0d1117?style=for-the-badge&logo=django&logoColor=092E20)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql)
-![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker)
-![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
+<img src="https://skillicons.dev/icons?i=py,cpp,c,ts,rust,go,r&theme=dark" alt="languages"/>
+<br/>
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,fastapi,nextjs,react,django&theme=dark" alt="frameworks"/>
+<br/>
+<img src="https://skillicons.dev/icons?i=postgres,docker,kubernetes,linux,gcp,azure,aws&theme=dark" alt="infra"/>
+<br/>
+<img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA"/>
+<img src="https://img.shields.io/badge/Nsight-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Nsight"/>
+<img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph"/>
+<img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt"/>
 
-**Deep in:** agentic architectures (ReAct, orchestrator-workers, plan-and-execute) · LLM tool-use & function calling · RAG systems · GPU programming · embedded ML
+<sub><b>deep in:</b> agent architectures · tool use & function calling · RAG · GPU programming · embedded ML</sub>
 
 </div>
 
-<br/>
-
-<br/>
-
-```
-────────────────────  C O M M I T   H I S T O R Y  ────────────────────
-```
+<!-- ============================  ACTIVITY  ============================ -->
 
 <div align="center">
+
+## 🐍 Commit history
 
 <img src="https://ghchart.rshah.org/8B5CF6/mneha05" alt="contribution graph" width="92%"/>
-
 <br/><br/>
-
 <img src="https://raw.githubusercontent.com/mneha05/mneha05/output/github-contribution-grid-snake-dark.svg" alt="snake eating my contributions" width="92%"/>
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=700&lines=building+agents+%3E+building+demos;shipping+%3E+talking;if+you're+building+AI+that+acts+%E2%80%94+let's+talk;mahesh54%40purdue.edu" alt="outro" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=700&lines=profile+before+you+optimize;shipping+%3E+talking;building+AI+that+acts%3F+let's+talk+%F0%9F%91%8B" alt="outro"/>
 
 <br/>
 
-[![Say hi](https://img.shields.io/badge/SAY_HI-mahesh54@purdue.edu-8B5CF6?style=for-the-badge)](mailto:mahesh54@purdue.edu)
-[![Connect](https://img.shields.io/badge/CONNECT-LinkedIn-0A66C2?style=for-the-badge)](https://linkedin.com/in/neha-mahesh)
-[![Explore](https://img.shields.io/badge/EXPLORE-Portfolio-1a1a2e?style=for-the-badge)](https://mneha05.github.io)
+<a href="mailto:mahesh54@purdue.edu"><img src="https://img.shields.io/badge/Say_hi-mahesh54%40purdue.edu-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/></a>
+<a href="https://www.linkedin.com/in/neha-mahesh-purdue/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://nehamahesh.netlify.app/"><img src="https://img.shields.io/badge/Explore-Portfolio-1a1a2e?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio"/></a>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=footer&text=see%20you%20in%20the%20commits&fontSize=28&fontColor=fff&animation=twinkling&fontAlignY=72" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=see%20you%20in%20the%20commits%20%E2%9C%A8&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
 
 </div>
